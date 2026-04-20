@@ -1,0 +1,280 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+/* Modal Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out;
+}
+.animate-modalSlideIn {
+  animation: modalSlideIn 0.3s ease-out;
+}
+/* Custom Scrollbar for Modal */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #0f1419;
+  border-left: 1px solid rgba(0, 240, 255, 0.3);
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #00f0ff;
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #ff00ff;
+}
+:root {
+  --color-dark-primary: #0a0e27;
+  --color-dark-secondary: #0f1419;
+  --color-neon-cyan: #00f0ff;
+  --color-neon-magenta: #ff00ff;
+  --color-neon-green: #00ff41;
+  --color-text-primary: #e0e0e0;
+  --color-text-muted: #808080;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  background: var(--color-dark-primary);
+  color: var(--color-text-primary);
+  overflow-x: hidden;
+}
+/* CRT Screen Effect */
+.crt-screen {
+  position: relative;
+}
+.crt-screen::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+  z-index: 9999;
+  animation: scanline 8s linear infinite;
+}
+@keyframes scanline {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+/* Neon Glow */
+.neon-glow-cyan {
+  text-shadow: 0 0 10px var(--color-neon-cyan),
+               0 0 20px var(--color-neon-cyan),
+               0 0 30px var(--color-neon-cyan);
+}
+.neon-glow-magenta {
+  text-shadow: 0 0 10px var(--color-neon-magenta),
+               0 0 20px var(--color-neon-magenta),
+               0 0 30px var(--color-neon-magenta);
+}
+.neon-glow-green {
+  text-shadow: 0 0 10px var(--color-neon-green),
+               0 0 20px var(--color-neon-green),
+               0 0 30px var(--color-neon-green);
+}
+.neon-border-cyan {
+  box-shadow: 0 0 10px var(--color-neon-cyan),
+              0 0 20px var(--color-neon-cyan),
+              inset 0 0 10px rgba(0, 240, 255, 0.2);
+}
+.neon-border-magenta {
+  box-shadow: 0 0 10px var(--color-neon-magenta),
+              0 0 20px var(--color-neon-magenta),
+              inset 0 0 10px rgba(255, 0, 255, 0.2);
+}
+/* Terminal Cursor Blink */
+@keyframes cursor-blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+.cursor-blink {
+  animation: cursor-blink 1s step-end infinite;
+}
+/* Glitch Effect */
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+.glitch-hover:hover {
+  animation: glitch 0.3s ease-in-out;
+}
+.glitch-text {
+  position: relative;
+}
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.glitch-text:hover::before {
+  color: var(--color-neon-cyan);
+  animation: glitch-before 0.3s ease-in-out;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+}
+.glitch-text:hover::after {
+  color: var(--color-neon-magenta);
+  animation: glitch-after 0.3s ease-in-out;
+  clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
+}
+@keyframes glitch-before {
+  0%, 100% {
+    transform: translate(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-3px, 0);
+    opacity: 0.8;
+  }
+}
+@keyframes glitch-after {
+  0%, 100% {
+    transform: translate(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(3px, 0);
+    opacity: 0.8;
+  }
+}
+/* Holographic Border */
+@keyframes holographic-rotate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.holographic-border {
+  position: relative;
+  background: linear-gradient(
+    45deg,
+    var(--color-neon-cyan),
+    var(--color-neon-magenta),
+    var(--color-neon-green),
+    var(--color-neon-cyan)
+  );
+  background-size: 300% 300%;
+  animation: holographic-rotate 3s ease infinite;
+  padding: 2px;
+}
+.holographic-border > * {
+  background: var(--color-dark-secondary);
+}
+/* Matrix Rain */
+.matrix-char {
+  color: var(--color-neon-green);
+  text-shadow: 0 0 5px var(--color-neon-green);
+  font-weight: 500;
+}
+/* Skill Bar Animation */
+@keyframes fill-bar {
+  from {
+    width: 0%;
+  }
+}
+.skill-bar-fill {
+  animation: fill-bar 1.5s ease-out forwards;
+}
+/* Focus Styles for Accessibility */
+*:focus-visible {
+  outline: 2px solid var(--color-neon-cyan);
+  outline-offset: 2px;
+}
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .crt-screen::before {
+    animation: none;
+  }
+}
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-dark-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-neon-cyan);
+  box-shadow: 0 0 10px var(--color-neon-cyan);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-neon-magenta);
+  box-shadow: 0 0 10px var(--color-neon-magenta);
+}

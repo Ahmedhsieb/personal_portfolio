@@ -1,0 +1,114 @@
+# Ahmed Osama Fawzy — CV Portfolio
+
+Backend Developer (PHP Laravel)  
+Building scalable ERP systems, APIs, and business solutions
+
+![Avatar](public/me.jpg)
+
+## Social
+
+- GitHub: https://github.com/Ahmedhsieb
+- LinkedIn: https://linkedin.com/in/ahmed-osama-573634331
+- Email: AhmedOsama11702@gmail.com
+
+## About
+
+- Backend Developer specializing in PHP and Laravel with experience building scalable ERP systems and REST APIs.
+- Experienced in developing full business solutions including CRM, HRM, accounting, and reservation systems.
+- Passionate about clean code, performance optimization, and building reliable backend architectures.
+- Continuously learning new technologies and improving software engineering and system design skills.
+
+**Interests**
+
+- Backend Development, System Design, API Development, Database Design, ERP Systems
+- Learning New Technologies, Programming, Technology
+
+## Skills
+
+**Languages**
+
+- 🐘 PHP — 95%
+- 📜 JavaScript — 80%
+- 🐍 Python — 70%
+- ⚙️ C++ — 65%
+- 🗄️ SQL — 90%
+
+**Frameworks & Tools**
+
+- 🔥 Laravel — 95%
+- ⚡ Livewire — 85%
+- 🧩 Filament — 85%
+- 🎨 Bootstrap — 90%
+- 🔗 REST API — 95%
+- 🧪 PHPUnit — 80%
+
+**Databases**
+
+- 🐬 MySQL — 95%
+
+**Cloud & DevOps**
+
+- 📦 Git — 90%
+- 🐞 Debugger Tools — 85%
+- 🔭 Laravel Telescope — 85%
+
+## Experience
+
+**Dania Air — Backend Developer (Nov 2024 - Present)**
+
+- Developing ERP modules including Supplier Management, CRM, Accounting, Production, Assets, and User Management.
+- Built TSR system to improve communication between sales and technical teams.
+- Maintaining and improving existing systems and adding new features.
+- Troubleshooting and optimizing backend performance.
+- Tech: PHP, Laravel, MySQL, REST API, Livewire, Filament
+
+**Freelance — Backend Developer (Oct 2023 - Oct 2024)**
+
+- Built CRM system with lead management and role-based access.
+- Developed agricultural marketplace with vendor management and order system.
+- Created HRM platform including payroll and leave tracking.
+- Built preschool management system.
+- Developed hotel reservation system with booking logic.
+- Built communication and management systems using Laravel.
+- Tech: PHP, Laravel, MySQL, REST API, Bootstrap
+
+## Projects
+
+**ERP System**
+
+- Full ERP system including CRM, accounting, supplier, assets, and production modules.
+- Tech: PHP, Laravel, MySQL, Livewire
+- Image: https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800
+
+**Agricultural Marketplace**
+
+- Marketplace with vendor accounts, orders, product management, and admin panel.
+- Tech: Laravel, REST API, MySQL
+- Image: ![Avatar](https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800)
+
+**HRM System**
+
+- Human resource system including employee management, payroll, and leaves.
+- Tech: Laravel, MySQL
+- Image: ![Avatar](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800)
+
+**Hotel Reservation System**
+
+- Hotel booking system with availability checking and booking logic.
+- Tech: Laravel, MySQL
+- Image: ![Avatar](https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800)
+
+## Education
+
+**Benha University**
+
+- Bachelor of Computers and Artificial Intelligence (2020 - 2024)
+- GPA: 3.3
+- Graduation Project: Chatbot Summarization Platform
+- Built backend using PHP and integrated Python AI model
+
+## Courses
+
+- Backend Developer — Itrax Academy (2023)
+- Time Management — Edraak (2023)
+
