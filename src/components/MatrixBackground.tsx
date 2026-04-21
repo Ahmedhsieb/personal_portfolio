@@ -9,7 +9,7 @@ export function MatrixBackground() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     const chars =
-    '@#$%%^&**&^%$#@';
+    '010101010101010101010101010101010101010101010101010101';
     const fontSize = 14;
     const columns = canvas.width / fontSize;
     const drops: number[] = [];

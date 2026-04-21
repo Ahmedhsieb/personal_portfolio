@@ -53,61 +53,6 @@ export function CoursesPage() {
           )}
         </div>
 
-        <div className="mt-12 border border-neon-green/30 bg-dark-secondary p-6">
-          <h2 className="text-2xl font-bold text-neon-green font-mono mb-4">
-            <span className="text-neon-cyan">&gt;</span> Learning Philosophy
-          </h2>
-          <div className="space-y-3 text-text-muted">
-            <p className="flex items-start">
-              <span
-                className="text-neon-green mr-3 flex-shrink-0"
-                aria-hidden="true">
-
-                ▹
-              </span>
-              <span>
-                Technology evolves rapidly - continuous learning is essential
-                for staying relevant
-              </span>
-            </p>
-            <p className="flex items-start">
-              <span
-                className="text-neon-green mr-3 flex-shrink-0"
-                aria-hidden="true">
-
-                ▹
-              </span>
-              <span>
-                Formal certifications validate skills and demonstrate commitment
-                to excellence
-              </span>
-            </p>
-            <p className="flex items-start">
-              <span
-                className="text-neon-green mr-3 flex-shrink-0"
-                aria-hidden="true">
-
-                ▹
-              </span>
-              <span>
-                Hands-on projects and real-world application solidify
-                theoretical knowledge
-              </span>
-            </p>
-            <p className="flex items-start">
-              <span
-                className="text-neon-green mr-3 flex-shrink-0"
-                aria-hidden="true">
-
-                ▹
-              </span>
-              <span>
-                Sharing knowledge through mentoring and documentation benefits
-                the entire community
-              </span>
-            </p>
-          </div>
-        </div>
       </div>
     </main>);
 
